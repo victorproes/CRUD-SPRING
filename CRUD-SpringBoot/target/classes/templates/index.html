@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú Principal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+</head>
+<body>
+
+<!-- Incluir el encabezado común -->
+<div th:replace="@{/header.html}"></div>
+
+
+
+<div class="container">
+    <h1>Menú Principal</h1>
+    <ul>
+        <li><a th:href="@{/empleados}">Listar Empleados</a></li>
+        <li><a th:href="@{/empleados/nuevo}">Crear Nuevo Empleado</a></li>
+        <li><a th:href="@{/buscar_salario}">Mostrar Salario</a></li>
+        <li><a th:href="@{/buscar}">Buscar empleados por criterio</a></li>
+
+    </ul>
+</div>
+<div th:replace="@{/footer.html}"></div>
+</body>
+</html>
